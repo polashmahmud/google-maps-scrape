@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 800px;
+            padding: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        button:disabled {
+            opacity: 0.5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #filenameInput {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+    <button id="actionButton" disabled>Scrape Data</button>
+    <input type="text" id="filenameInput" placeholder="Enter filename (optional)">
+    <button id="downloadCsvButton" disabled>Download CSV</button>
+    <table id="resultsTable"></table>
+    <script src="popup.js"></script>
+</body>
+</html>
